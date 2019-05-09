@@ -2,14 +2,29 @@ import React from 'react';
 import './App.css';
 
 // components
-import HeaderContainer from './components/HeaderComponents/HeaderContainer';
+import SocialCard from './components/SocialCard';
 
-const App = () => {
-  return (
-    <React.Fragment>
-      <HeaderContainer />
-    </React.Fragment>
-  );
-};
+// data
+import Content from './SomeData';
+
+const App = _ => (
+  <React.Fragment>
+    <header>
+      <h1>Lambda School Dev Feed</h1>
+      <nav>
+        <a href="about/">About</a>
+        <a href="contact/">Contact</a>
+      </nav>
+    </header>
+    <main className="feed">
+      <SocialCard data={ Content['react'] } />
+      <SocialCard data={ Content['react'] } />
+      <SocialCard data={ Content['react'] } />
+    </main>
+    <footer>
+      © 2019 Lambda School All Rights Reserved
+    </footer>
+  </React.Fragment>
+);
 
 export default App;
