@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
 
-const HeaderContent = _ => <p>HeaderContent</p>;
+const HeaderContent = props => <p>{ props.content }</p>;
 
 export default HeaderContent;
