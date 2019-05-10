@@ -5,7 +5,7 @@ import './SocialCard.css';
 import Thumbnail from './HeaderComponents/ImageThumbnail';
 import Header from './HeaderComponents/HeaderContainer';
 import Card from './CardComponents/CardContainer';
-// import Footer from './FooterComponents/Footer';
+import Footer from './FooterComponents/Footer';
 
 const SocialCard = props => (
   <section className="social-card">
@@ -15,6 +15,7 @@ const SocialCard = props => (
       <a href={ 'https://' + props.meta.card.text.url }>
         <Card meta={ props.meta.card } />
       </a>
+      <Footer />
     </section>
   </section>
 );
