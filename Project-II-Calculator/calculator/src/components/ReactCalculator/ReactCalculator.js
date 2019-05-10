@@ -15,14 +15,6 @@ class ReactCalculator extends React.Component {
       symbols: [ '÷', '×', '−', '+', '=' ],
       total: 0
     };
-    
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    this.setState(state => {
-      return { total: state.total + 1 };
-    });
   }
 
   render() {
@@ -38,7 +30,7 @@ class ReactCalculator extends React.Component {
             <ActionButton text="0" />
           </section>
           <section className="side-pad">
-            { this.state.symbols.map(s => <ActionButton buttonStyle="symbol" text={ s } />) }
+            { this.state.symbols.map(s => <ActionButton buttonStyle="symbol" key={ s } text={ s } />) }
           </section>
         </div>
       </div>
