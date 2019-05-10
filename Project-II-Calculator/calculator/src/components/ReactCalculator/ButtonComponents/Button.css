@@ -1,0 +1,43 @@
+button {
+  background: none;
+  border: 1px solid black;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: thinner;
+  padding: 20px;
+  transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+}
+
+button:hover {
+  background-color: #a12d1e;
+  border-color: #a12d1e;
+  color: white;
+}
+
+.action-button {
+  width: 100%;
+}
+
+.pad-numbers button {
+  width: 33.333333333%;
+}
+
+.action-button:first-child {
+  font-weight: 300 !important;
+}
+
+.number, .action-button:last-child {
+  font-weight: bold;
+}
+
+.symbol {
+  background-color: #a12d1e;
+  color: white;
+  font-weight: 300 !important;
+}
+
+.symbol:hover {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
