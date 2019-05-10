@@ -1,15 +1,12 @@
 import React from 'react';
 import './Footer.css';
 
-const shares = Math.floor(Math.random() * 15),
-      likes = Math.floor(Math.random() * 20);
-
-const FooterContainer = _ => (
+const FooterContainer = props => (
   <nav className="social-footer">
-    <i class="far fa-comment"></i>
-    <span><i class="fas fa-sync"></i> { shares > 0 ? shares : null }</span>
-    <span><i class="far fa-heart"></i> { likes > 0 ? likes : null }</span>
-    <i class="far fa-envelope"></i>
+    <i className="far fa-comment"></i>
+    <span><i className="fas fa-sync"></i> { props.meta.shares > 0 ? props.meta.shares : null }</span>
+    <span><i className="far fa-heart"></i> { props.meta.likes > 0 ? props.meta.likes : null }</span>
+    <i className="far fa-envelope"></i>
   </nav>
 );
 

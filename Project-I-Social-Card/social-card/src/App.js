@@ -17,7 +17,7 @@ const App = _ => (
       </nav>
     </header>
     <main>
-      { posts.map(post => <SocialCard meta={post} />) }
+      { posts.map(post => <SocialCard meta={post} key={ post.card.text.url } />) }
     </main>
     <footer>
       © 2019 Lambda School All Rights Reserved

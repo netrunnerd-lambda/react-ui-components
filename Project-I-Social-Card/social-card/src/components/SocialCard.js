@@ -15,7 +15,7 @@ const SocialCard = props => (
       <a href={ 'https://' + props.meta.card.text.url }>
         <Card meta={ props.meta.card } />
       </a>
-      <Footer />
+      <Footer meta={ props.meta.footer } />
     </section>
   </section>
 );
