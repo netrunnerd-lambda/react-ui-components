@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 
-// components
+// components ...
 import SocialCard from './components/SocialCard';
 
-// data
-import Content from './SomeData';
+// data ...
+import posts from './SomeData';
 
 const App = _ => (
   <React.Fragment>
@@ -16,10 +16,8 @@ const App = _ => (
         <a href="contact/">Contact</a>
       </nav>
     </header>
-    <main className="feed">
-      <SocialCard data={ Content['react'] } />
-      <SocialCard data={ Content['react'] } />
-      <SocialCard data={ Content['react'] } />
+    <main>
+      { posts.map(post => <SocialCard meta={post} />) }
     </main>
     <footer>
       © 2019 Lambda School All Rights Reserved

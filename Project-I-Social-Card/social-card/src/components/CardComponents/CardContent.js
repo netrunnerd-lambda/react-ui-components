@@ -3,9 +3,9 @@ import './Card.css';
 
 const CardContent = props => (
   <React.Fragment>
-    <h3>{ props.content.heading }</h3>
-    <p>{ props.content.paragraph }</p>
-    <a href={ 'https://' + props.content.url }>{ props.content.url }</a>
+    <h3>{ props.meta.heading }</h3>
+    <p>{ props.meta.content }</p>
+    <span>{ props.meta.url }</span>
   </React.Fragment>
 );
 

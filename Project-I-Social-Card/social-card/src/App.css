@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav {
+  text-align: right;
+  width: 25%;
+}
+
+header nav a {
+  border-radius: 5px;
+  color: inherit;
+  margin: 0 1.5%;
+  padding: 1% 5%;
+  text-decoration: none;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+header nav a:hover {
+  background-color: red;
+  color: white;
+}
+
+footer {
+  font-size: 80%;
+  margin: 10% 0 2.5% 0;
+  text-align: center;
+}

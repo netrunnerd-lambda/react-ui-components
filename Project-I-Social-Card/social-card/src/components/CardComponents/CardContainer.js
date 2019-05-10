@@ -7,8 +7,10 @@ import Content from './CardContent';
 
 const CardContainer = props => (
   <div className="card-container">
-    <Banner src={ props.content.imgUrl } alt={ props.content.imgAlt } />
-    <Content content={ props.content.text }/>
+    <Banner src={ props.meta.imgUrl } alt={ props.meta.imgAlt } />
+    <section className="card-content">
+      <Content meta={ props.meta.text }/>
+    </section>
   </div>
 );
 
