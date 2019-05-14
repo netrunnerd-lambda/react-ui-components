@@ -1,1 +1,13 @@
-/* All styles for your header Components live here */
+.social-header h2 {
+  font-size: 16px;
+}
+
+.social-header h2 > span {
+  color: darkgray;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.social-header p {
+  margin: 10px 0;
+}

@@ -1,0 +1,24 @@
+.social-card {
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  font-size: 15px;
+  display: flex;
+  margin: 5% auto;
+  padding: 10px;
+  max-width: 590px;
+}
+
+.social-card > img {
+  height: 35px;
+  margin-top: 5px;
+  width: 35px;
+}
+
+.social-card-content {
+  padding-left: 10px;
+}
+
+.social-card-content a {
+  color: inherit;
+  text-decoration: none;
+}

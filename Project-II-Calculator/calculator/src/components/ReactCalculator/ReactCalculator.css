@@ -1,0 +1,24 @@
+.calculator {
+  border: 1px solid black;
+  margin: 5px auto;
+  max-width: 456px;
+}
+
+.calculator, .calculator button {
+  font-size: 3rem;
+}
+
+.calc-pad {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-pad {
+  width: 75%;
+}
+
+.side-pad {
+  display: flex;
+  flex-flow: column;
+  width: 25%;
+}

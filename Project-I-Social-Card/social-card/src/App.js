@@ -1,24 +1,28 @@
 import React from 'react';
 import './App.css';
 
-const App = () => {
-  return (
-    <div>
-      <h3>Welcome to React Social Card!</h3>
-      <p>
-        Begin by exploring the `components` directory. You'll notice we have a
-        few files that we've already included in there to get you started right
-        away building components. You'll need to make sure you include your
-        components that you build in this file to watch your app come to life
-      </p>
-      <p>
-        <strong>
-          Don't forget to `default export` your components and import them here
-          inside of this file in order to make them work.
-        </strong>
-      </p>
-    </div>
-  );
-};
+// components ...
+import SocialCard from './components/SocialCard';
+
+// data ...
+import posts from './SomeData';
+
+const App = _ => (
+  <React.Fragment>
+    <header>
+      <h1>Lambda School Dev Feed</h1>
+      <nav>
+        <a href="about/">About</a>
+        <a href="contact/">Contact</a>
+      </nav>
+    </header>
+    <main>
+      { posts.map(post => <SocialCard meta={post} key={ post.card.text.url } />) }
+    </main>
+    <footer>
+      © 2019 Lambda School All Rights Reserved
+    </footer>
+  </React.Fragment>
+);
 
 export default App;
